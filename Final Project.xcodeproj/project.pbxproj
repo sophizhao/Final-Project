@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8EFA14D285A32F200384290 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA14C285A32F200384290 /* PhotoGalleryViewController.swift */; };
+		A8EFA14F285A399E00384290 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA14E285A399E00384290 /* RemindersViewController.swift */; };
+		A8EFA151285A3A2000384290 /* SymptomsLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA150285A3A2000384290 /* SymptomsLogViewController.swift */; };
+		A8EFA153285A3ABE00384290 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA152285A3ABE00384290 /* MyAccountViewController.swift */; };
+		A8EFA155285A427200384290 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA154285A427200384290 /* UserLoginViewController.swift */; };
+		A8EFA157285A42CA00384290 /* FullNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA156285A42CA00384290 /* FullNameViewController.swift */; };
+		A8EFA159285A430C00384290 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA158285A430C00384290 /* AgeViewController.swift */; };
+		A8EFA15B285A434F00384290 /* MedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15A285A434F00384290 /* MedicationViewController.swift */; };
+		A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15C285A437E00384290 /* DosageViewController.swift */; };
+		A8EFA15F285A43B900384290 /* DosePeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */; };
+		A8EFA161285A43DE00384290 /* DoseReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA160285A43DE00384290 /* DoseReminderViewController.swift */; };
 		ECD6043C2859044B00499BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043B2859044B00499BFF /* AppDelegate.swift */; };
 		ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043D2859044B00499BFF /* SceneDelegate.swift */; };
 		ECD604402859044B00499BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043F2859044B00499BFF /* ViewController.swift */; };
@@ -17,6 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8EFA14C285A32F200384290 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		A8EFA14E285A399E00384290 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		A8EFA150285A3A2000384290 /* SymptomsLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsLogViewController.swift; sourceTree = "<group>"; };
+		A8EFA152285A3ABE00384290 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		A8EFA154285A427200384290 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		A8EFA156285A42CA00384290 /* FullNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameViewController.swift; sourceTree = "<group>"; };
+		A8EFA158285A430C00384290 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		A8EFA15A285A434F00384290 /* MedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationViewController.swift; sourceTree = "<group>"; };
+		A8EFA15C285A437E00384290 /* DosageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageViewController.swift; sourceTree = "<group>"; };
+		A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosePeriodViewController.swift; sourceTree = "<group>"; };
+		A8EFA160285A43DE00384290 /* DoseReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseReminderViewController.swift; sourceTree = "<group>"; };
 		ECD604382859044B00499BFF /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6043B2859044B00499BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD6043D2859044B00499BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +84,17 @@
 				ECD6043D2859044B00499BFF /* SceneDelegate.swift */,
 				ECD6043F2859044B00499BFF /* ViewController.swift */,
 				ECD604412859044B00499BFF /* Main.storyboard */,
+				A8EFA160285A43DE00384290 /* DoseReminderViewController.swift */,
+				A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */,
+				A8EFA15C285A437E00384290 /* DosageViewController.swift */,
+				A8EFA15A285A434F00384290 /* MedicationViewController.swift */,
+				A8EFA158285A430C00384290 /* AgeViewController.swift */,
+				A8EFA156285A42CA00384290 /* FullNameViewController.swift */,
+				A8EFA154285A427200384290 /* UserLoginViewController.swift */,
+				A8EFA152285A3ABE00384290 /* MyAccountViewController.swift */,
+				A8EFA150285A3A2000384290 /* SymptomsLogViewController.swift */,
+				A8EFA14E285A399E00384290 /* RemindersViewController.swift */,
+				A8EFA14C285A32F200384290 /* PhotoGalleryViewController.swift */,
 				ECD604472859044C00499BFF /* Assets.xcassets */,
 				ECD604492859044C00499BFF /* LaunchScreen.storyboard */,
 				ECD6044C2859044C00499BFF /* Info.plist */,
@@ -141,10 +174,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EFA15F285A43B900384290 /* DosePeriodViewController.swift in Sources */,
+				A8EFA151285A3A2000384290 /* SymptomsLogViewController.swift in Sources */,
 				ECD604402859044B00499BFF /* ViewController.swift in Sources */,
+				A8EFA153285A3ABE00384290 /* MyAccountViewController.swift in Sources */,
 				ECD6043C2859044B00499BFF /* AppDelegate.swift in Sources */,
+				A8EFA159285A430C00384290 /* AgeViewController.swift in Sources */,
+				A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */,
+				A8EFA14F285A399E00384290 /* RemindersViewController.swift in Sources */,
 				ECD604462859044B00499BFF /* Final_Project.xcdatamodeld in Sources */,
+				A8EFA155285A427200384290 /* UserLoginViewController.swift in Sources */,
 				ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */,
+				A8EFA15B285A434F00384290 /* MedicationViewController.swift in Sources */,
+				A8EFA157285A42CA00384290 /* FullNameViewController.swift in Sources */,
+				A8EFA161285A43DE00384290 /* DoseReminderViewController.swift in Sources */,
+				A8EFA14D285A32F200384290 /* PhotoGalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
