@@ -8,18 +8,23 @@
 import UIKit
 
 class FullNameViewController: UIViewController {
+    
 
     
+    @IBOutlet weak var textField: UITextField!
     
-    
-    
-    
-    
+    static var accountInfo = ["","","","",""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let checkStr = textField.text{
+            FullNameViewController.accountInfo[0] = checkStr
+        }
     }
     
 

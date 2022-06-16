@@ -10,12 +10,14 @@ import UIKit
 class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    var date = ""
-    var holdImgs : [String: UIImagePickerController] = [:]
+    var newDate = ""
+    var today = ""
+    var holdImgs : [String: UIImage] = [:]
     
     var imagePicker = UIImagePickerController()
     
-    @IBOutlet weak var displayImg: UIImageView!
+    
+    @IBOutlet weak var imageDisplay: UIImageView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func datePickerChanged(_ sender: Any) {
@@ -24,10 +26,15 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateFormatter.timeStyle = DateFormatter.Style.short
 
-        let strDate = dateFormatter.string(from: datePicker.date)
-        date = strDate
+        var strDate = dateFormatter.string(from: datePicker.date)
+        let endOfDate = strDate.lastIndex(of: ",")
+        strDate = String(strDate[...(endOfDate)!])
+        newDate = strDate
         
-        print(date)
+        showImageByDate(date: newDate)
+        
+        print(newDate)
+        
     }
 
     
@@ -38,7 +45,6 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         imagePicker.sourceType = .camera
 
         present(imagePicker, animated: true, completion: nil)
-        holdImgs[date] = imagePicker
 
     }
 
@@ -50,26 +56,31 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         imagePicker.sourceType = .photoLibrary
 
         present(imagePicker, animated: true, completion: nil)
-        holdImgs[date] = imagePicker
     }
     
-    
+    /*
+     Displays image on the page, assigns the date of it to today
+     */
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
-//        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-//            imageDisplay.image = selectedImage
-//            imagePicker.dismiss(animated: true, completion: nil)
-//        }
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageDisplay.image = selectedImage
+            imagePicker.dismiss(animated: true, completion: nil)
+        }
+        holdImgs[today] = imageDisplay.image!
+        print(holdImgs)
+        print(type(of: imageDisplay.image))
 
     }
     
-    func showImageByDate(){
-        // imagePicker is type UIImagePickerController
-        // holdImgs is String(date): UIImagePickerController
-//        imagePicker = holdImgs[date]
-
-
-
+    /*
+     Pick a date and show an image
+     */
+    func showImageByDate(date: String){
+        
+        imageDisplay.image = holdImgs[date]
+        
+        
     }
 
     override func viewDidLoad() {
@@ -85,9 +96,12 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateFormatter.timeStyle = DateFormatter.Style.short
 
-        let strToday = dateFormatter.string(from: todayDate)
-        var today = strToday
-        print(today)
+        var strToday = dateFormatter.string(from: todayDate)
+        let endOfDate = strToday.lastIndex(of: ",")
+        strToday = String(strToday[...(endOfDate)!])
+        today = strToday
+        print("TODAY:\(today)")
+        print(holdImgs)
     }
     
 

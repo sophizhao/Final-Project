@@ -9,10 +9,19 @@ import UIKit
 
 class AgeViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let checkStr = textField.text{
+            FullNameViewController.accountInfo[1] = checkStr
+        }
     }
     
 
