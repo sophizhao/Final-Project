@@ -1154,6 +1154,10 @@
                                 <color key="textColor" red="0.1596521437" green="0.32530963419999998" blue="0.41921454670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo_2" id="6nu-QT-Xx0">
+                                <rect key="frame" x="296" y="56" width="98" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MONTH/DATE/YEAR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-6r-nJV">
                                 <rect key="frame" x="26" y="451" width="368" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1210,10 +1214,6 @@
                                     <segue destination="1Xu-BE-64P" kind="show" id="2Jo-5X-MKn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo_2" id="6nu-QT-Xx0">
-                                <rect key="frame" x="296" y="56" width="98" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96416538949999997" green="0.94119846819999997" blue="0.92887669799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1221,6 +1221,7 @@
                     <navigationItem key="navigationItem" title="Title" id="F8p-M2-eqB"/>
                     <connections>
                         <outlet property="fullDateLabel" destination="AI9-6r-nJV" id="QcN-7c-f2P"/>
+                        <outlet property="quote" destination="Rb0-Ys-9KT" id="8YI-vA-M7q"/>
                         <outlet property="todayLabel" destination="ash-n1-zh7" id="LAT-uh-Wtg"/>
                         <outlet property="userName" destination="Et6-jd-VlX" id="Dli-8L-OIj"/>
                     </connections>
@@ -1448,13 +1449,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XHl-nz-lbf"/>
-        <segue reference="BH6-RU-POl"/>
-        <segue reference="cJJ-sh-Wd6"/>
-        <segue reference="xlh-Lc-Y46"/>
-        <segue reference="xvd-D2-teL"/>
+        <segue reference="KFc-og-fJg"/>
+        <segue reference="f9i-Nn-wdz"/>
+        <segue reference="VRv-47-yw2"/>
+        <segue reference="j4h-qD-W3t"/>
+        <segue reference="zdA-D4-pH5"/>
+        <segue reference="41c-Ic-4rv"/>
         <segue reference="Hwy-yi-Ue3"/>
-        <segue reference="QvU-kC-vYI"/>
+        <segue reference="9pM-Ob-aNT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Symptoms Background" width="830" height="828"/>
