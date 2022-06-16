@@ -24,12 +24,14 @@ class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     let dayComponent = 0
     let periodComponent = 1
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.myPicker.delegate = self
         self.myPicker.dataSource = self
-        print("1")
+    
     }
     
     
@@ -40,21 +42,24 @@ class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
-        print("2")
+
         return pickerData[component].count
     }
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int,forComponent component: Int) -> String? {
         
-        print("3")
+
+        pickerView.setValue(UIColor.white, forKeyPath: "textColor")
+ 
         return pickerData[component][row]
+
     }
     
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        print("4")
+
         updateLabel()
     }
     
