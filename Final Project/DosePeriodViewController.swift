@@ -9,7 +9,6 @@ import UIKit
 
 class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    var accountInfo : [String] = []
     var number = ""
     var period = ""
     
@@ -29,6 +28,7 @@ class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.myPicker.delegate = self
         self.myPicker.dataSource = self
     
@@ -62,6 +62,7 @@ class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPick
 
         updateLabel()
     }
+
     
     
     func updateLabel() {

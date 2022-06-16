@@ -17,6 +17,8 @@
 		A8EFA15B285A434F00384290 /* MedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15A285A434F00384290 /* MedicationViewController.swift */; };
 		A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15C285A437E00384290 /* DosageViewController.swift */; };
 		A8EFA15F285A43B900384290 /* DosePeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */; };
+		EC238945285B849600D5CF2A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC238944285B849600D5CF2A /* Reminder.swift */; };
+		ECC35006285B798E00ABA352 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC35005285B798E00ABA352 /* AddReminderViewController.swift */; };
 		ECD6043C2859044B00499BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043B2859044B00499BFF /* AppDelegate.swift */; };
 		ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043D2859044B00499BFF /* SceneDelegate.swift */; };
 		ECD604402859044B00499BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043F2859044B00499BFF /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		A8EFA15C285A437E00384290 /* DosageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageViewController.swift; sourceTree = "<group>"; };
 		A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosePeriodViewController.swift; sourceTree = "<group>"; };
 		BD92B06D285A767A00FD9505 /* Final Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Final Project.entitlements"; sourceTree = "<group>"; };
+		EC238944285B849600D5CF2A /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		ECC35005285B798E00ABA352 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		ECD604382859044B00499BFF /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6043B2859044B00499BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD6043D2859044B00499BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		ECD6042F2859044B00499BFF = {
 			isa = PBXGroup;
 			children = (
+				EC238944285B849600D5CF2A /* Reminder.swift */,
 				ECD6043A2859044B00499BFF /* Final Project */,
 				ECD604392859044B00499BFF /* Products */,
 			);
@@ -93,6 +98,7 @@
 				A8EFA152285A3ABE00384290 /* MyAccountViewController.swift */,
 				A8EFA150285A3A2000384290 /* SymptomsLogViewController.swift */,
 				A8EFA14E285A399E00384290 /* RemindersViewController.swift */,
+				ECC35005285B798E00ABA352 /* AddReminderViewController.swift */,
 				A8EFA14C285A32F200384290 /* PhotoGalleryViewController.swift */,
 				ECD604472859044C00499BFF /* Assets.xcassets */,
 				ECD604492859044C00499BFF /* LaunchScreen.storyboard */,
@@ -183,10 +189,12 @@
 				A8EFA14F285A399E00384290 /* RemindersViewController.swift in Sources */,
 				ECD604462859044B00499BFF /* Final_Project.xcdatamodeld in Sources */,
 				A8EFA155285A427200384290 /* UserLoginViewController.swift in Sources */,
+				ECC35006285B798E00ABA352 /* AddReminderViewController.swift in Sources */,
 				ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */,
 				A8EFA15B285A434F00384290 /* MedicationViewController.swift in Sources */,
 				A8EFA157285A42CA00384290 /* FullNameViewController.swift in Sources */,
 				A8EFA14D285A32F200384290 /* PhotoGalleryViewController.swift in Sources */,
+				EC238945285B849600D5CF2A /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
