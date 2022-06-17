@@ -1535,24 +1535,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-<<<<<<< Updated upstream
-        <segue reference="KFc-og-fJg"/>
-        <segue reference="f9i-Nn-wdz"/>
-        <segue reference="VRv-47-yw2"/>
-        <segue reference="j4h-qD-W3t"/>
-        <segue reference="zdA-D4-pH5"/>
-        <segue reference="41c-Ic-4rv"/>
-        <segue reference="Hwy-yi-Ue3"/>
-=======
-        <segue reference="J1E-vn-7WZ"/>
         <segue reference="FZ8-ip-6wb"/>
-        <segue reference="f9i-Nn-wdz"/>
-        <segue reference="eO9-sd-iNV"/>
+        <segue reference="bEI-Q4-nUq"/>
+        <segue reference="os3-H0-6h6"/>
         <segue reference="j4h-qD-W3t"/>
         <segue reference="zdA-D4-pH5"/>
         <segue reference="41c-Ic-4rv"/>
         <segue reference="Y5S-XC-IJ7"/>
->>>>>>> Stashed changes
         <segue reference="9pM-Ob-aNT"/>
     </inferredMetricsTieBreakers>
     <resources>
