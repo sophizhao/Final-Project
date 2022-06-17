@@ -50,7 +50,7 @@ class DosePeriodViewController: UIViewController, UIPickerViewDataSource, UIPick
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int,forComponent component: Int) -> String? {
         
 
-        pickerView.setValue(UIColor.white, forKeyPath: "textColor")
+        pickerView.setValue(UIColor(red: 0.16, green: 0.33, blue: 0.42, alpha: 1.0), forKeyPath: "textColor")
  
         return pickerData[component][row]
 
