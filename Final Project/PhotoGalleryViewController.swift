@@ -25,11 +25,10 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
         
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateFormatter.timeStyle = DateFormatter.Style.short
-        
-        dateFormatter.dateFormat = "MM/dd/yy"
 
         var strDate = dateFormatter.string(from: datePicker.date)
-    
+        let endOfDate = strDate.lastIndex(of: ",")
+        strDate = String(strDate[...(endOfDate)!])
         newDate = strDate
         
         showImageByDate(date: newDate)
@@ -96,10 +95,10 @@ class PhotoGalleryViewController: UIViewController, UIImagePickerControllerDeleg
 
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateFormatter.timeStyle = DateFormatter.Style.short
-        
-        dateFormatter.dateFormat = "MM/dd/yy"
 
         var strToday = dateFormatter.string(from: todayDate)
+        let endOfDate = strToday.lastIndex(of: ",")
+        strToday = String(strToday[...(endOfDate)!])
         today = strToday
         print("TODAY:\(today)")
         print(holdImgs)
