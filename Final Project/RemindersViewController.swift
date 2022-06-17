@@ -20,8 +20,6 @@ class RemindersViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-
-        
     }
     
 
@@ -52,6 +50,15 @@ class RemindersViewController: UIViewController {
                 completeVC.selectedReminder = reminder
                 completeVC.previousVC = self
                 print("Testing if prepare is the issue")
+                
+                let dateFormatter = DateFormatter()
+                
+                let hour = Calendar.current.component(.hour, from: reminder.time!)
+                let minute = Calendar.current.component(.minute, from: reminder.time!)
+                
+                dateFormatter.dateFormat = "h:mm a"
+                let reminderDate = dateFormatter.string(from: reminder.time!)
+                RemindersViewController.reminderName = "\(reminderDate) \(reminder.frequency ?? "")"
             }
         }
 

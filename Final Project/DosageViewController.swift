@@ -18,7 +18,7 @@ class DosageViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let checkStr = textField.text{
+        if let checkStr = textField.text {
             FullNameViewController.accountInfo[3] = checkStr
         }
     }

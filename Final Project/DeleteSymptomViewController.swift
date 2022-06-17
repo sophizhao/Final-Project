@@ -17,7 +17,7 @@ class DeleteSymptomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = SymptomsLogViewController.symptomName
+        titleLabel.text = selectedSymptom?.name
 
         // Do any additional setup after loading the view.
     }

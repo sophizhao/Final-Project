@@ -140,8 +140,6 @@ extension SymptomsLogViewController: UITableViewDataSource{
 
         let symptom = SymptomsLogViewController.filteredSymptoms[indexPath.row]
         
-        SymptomsLogViewController.symptomName = symptom.name ?? ""
-        
         cell.textLabel?.font = UIFont.init(name: "Futura", size: 16)
         
         cell.textLabel?.text = SymptomsLogViewController.filteredSymptoms[indexPath.row].name
