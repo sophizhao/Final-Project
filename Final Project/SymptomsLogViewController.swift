@@ -38,7 +38,6 @@ class SymptomsLogViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        datePicker.contentHorizontalAlignment = .center
         
     }
     
