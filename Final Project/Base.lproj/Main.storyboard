@@ -51,10 +51,6 @@
                                     <action selector="camera:" destination="QIV-jV-B9y" eventType="touchUpInside" id="ieC-ed-4MD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Symptoms Background" translatesAutoresizingMaskIntoConstraints="NO" id="f6R-Hb-uDP">
-                                <rect key="frame" x="86" y="205" width="242" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photo Gallery" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-cT-uCn">
                                 <rect key="frame" x="12" y="99" width="277" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,7 +82,7 @@
                                                     <segue destination="aXU-sM-UPO" kind="show" id="Xcl-tt-nVR"/>
                                                 </connections>
                                             </barButtonItem>
-                                            <barButtonItem title="Item" id="x45-IB-cVc">
+                                            <barButtonItem title="Item" changesSelectionAsPrimaryAction="YES" id="x45-IB-cVc">
                                                 <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
@@ -101,6 +97,17 @@
                                 <rect key="frame" x="296" y="51" width="98" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a photo for today." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-r9-mb3">
+                                <rect key="frame" x="18" y="168" width="379" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.52941179279999995" green="0.6549019814" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Symptoms Background" translatesAutoresizingMaskIntoConstraints="NO" id="f6R-Hb-uDP">
+                                <rect key="frame" x="72" y="224" width="269" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z6I-4N-U5L"/>
                         <color key="backgroundColor" red="0.96416538949999997" green="0.94119846819999997" blue="0.92887669799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHp-bP-fF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1736.2318840579712" y="837.72321428571422"/>
+            <point key="canvasLocation" x="-3246" y="1578"/>
         </scene>
         <!--User Login View Controller-->
         <scene sceneID="HPd-Rt-trp">
@@ -139,17 +146,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_logo_3" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-pC-j7e">
+                                <rect key="frame" x="36" y="371" width="342" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="medico - today and tomorrow." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgQ-NX-caW">
-                                <rect key="frame" x="107" y="326" width="272" height="28"/>
+                                <rect key="frame" x="107" y="502" width="272" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app_logo_3" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-pC-j7e">
-                                <rect key="frame" x="36" y="195" width="342" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNi-dk-qYC">
                                 <rect key="frame" x="20" y="121" width="243" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,11 +174,11 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qr-nZ-b1U">
-                                <rect key="frame" x="211" y="794" width="158" height="56"/>
+                                <rect key="frame" x="117" y="563" width="179" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="New Account">
+                                <buttonConfiguration key="configuration" style="filled" title="Create Account">
                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,22 +187,15 @@
                                     <segue destination="ltk-lg-rNZ" kind="show" id="QvU-kC-vYI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Settings" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua4-S5-1ui">
-                                <rect key="frame" x="66" y="439" width="283" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="46"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnd-PZ-h4l">
-                                <rect key="frame" x="46" y="794" width="110" height="56"/>
+                                <rect key="frame" x="152" y="789" width="110" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Guest">
                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" red="0.73333334920000004" green="0.58823531870000001" blue="0.54901963470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96078431610000004" green="0.94117647410000005" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="XHl-nz-lbf"/>
@@ -764,10 +764,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2L-7E-NaE">
-                                <rect key="frame" x="26" y="667" width="368" height="54"/>
+                                <rect key="frame" x="23" y="668" width="368" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="0.1596521437" green="0.32530963419999998" blue="0.41921454670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
@@ -882,7 +882,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Account" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEx-Y8-QWq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEx-Y8-QWq">
                                 <rect key="frame" x="20" y="130" width="374" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
@@ -994,7 +994,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fH-W2-bE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5722" y="1094"/>
+            <point key="canvasLocation" x="-749" y="80"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1030,15 +1030,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et6-jd-VlX">
-                                <rect key="frame" x="26" y="193" width="337" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="54"/>
-                                <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAY" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ash-n1-zh7">
-                                <rect key="frame" x="23" y="393" width="340" height="61"/>
+                                <rect key="frame" x="26" y="393" width="340" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="44"/>
                                 <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1052,7 +1045,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Success is not final; failure is not fatal; it is the courage to continue that counts.&quot; ~ Winston S. Churchhill" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb0-Ys-9KT">
-                                <rect key="frame" x="56" y="263" width="338" height="125"/>
+                                <rect key="frame" x="56" y="267" width="338" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="19"/>
                                 <color key="textColor" red="0.1596521437" green="0.32530963419999998" blue="0.41921454670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1063,21 +1056,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MONTH/DATE/YEAR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI9-6r-nJV">
-                                <rect key="frame" x="26" y="451" width="368" height="41"/>
+                                <rect key="frame" x="29" y="451" width="368" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgX-3m-RYB">
-                                <rect key="frame" x="26" y="127" width="311" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="54"/>
-                                <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-If-n95">
-                                <rect key="frame" x="20" y="504" width="374" height="97"/>
+                                <rect key="frame" x="19" y="616" width="374" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -1091,7 +1077,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ce-yJ-FWq">
-                                <rect key="frame" x="20" y="619" width="374" height="97"/>
+                                <rect key="frame" x="19" y="500" width="374" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76117110249999997" green="0.5804906487" blue="0.53934675460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -1118,6 +1104,20 @@
                                     <segue destination="ChA-Yc-CfS" kind="presentation" id="2Jo-5X-MKn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et6-jd-VlX">
+                                <rect key="frame" x="29" y="185" width="337" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="54"/>
+                                <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgX-3m-RYB">
+                                <rect key="frame" x="29" y="119" width="311" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="54"/>
+                                <color key="textColor" red="0.49505835770000001" green="0.65866374969999997" blue="0.74461990590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96416538949999997" green="0.94119846819999997" blue="0.92887669799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1132,7 +1132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4680" y="1040"/>
+            <point key="canvasLocation" x="-3246" y="838"/>
         </scene>
         <!--Reminders View Controller-->
         <scene sceneID="WPs-Zu-Bfh">
@@ -1229,7 +1229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lU-5x-DFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2726.0869565217395" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="-5772" y="1578"/>
         </scene>
         <!--Add Reminder View Controller-->
         <scene sceneID="MGf-CJ-lib">
@@ -1304,7 +1304,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZE-II-9eO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="QLU-g9-b5E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-4062.3188405797105" y="1868.9732142857142"/>
+            <point key="canvasLocation" x="-4977" y="1578"/>
         </scene>
         <!--Symptoms Log View Controller-->
         <scene sceneID="YSg-kH-ZXm">
@@ -1410,7 +1410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIv-6G-Eoh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160.86956521739131" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="-2239" y="1578"/>
         </scene>
         <!--Delete Symptom View Controller-->
         <scene sceneID="0ow-gb-E5L">
@@ -1466,7 +1466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qed-JS-zMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.86956521739137" y="1728.3482142857142"/>
+            <point key="canvasLocation" x="-749" y="1578"/>
         </scene>
         <!--Complete Reminder View Controller-->
         <scene sceneID="Q5F-YV-RkK">
@@ -1524,7 +1524,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bc5-Ax-V21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3201.449275362319" y="1868.9732142857142"/>
+            <point key="canvasLocation" x="-4213" y="1578"/>
         </scene>
         <!--Add Symptom View Controller-->
         <scene sceneID="rm3-ll-raY">
@@ -1586,7 +1586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyJ-Vh-ega" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126.0869565217392" y="1007.8125"/>
+            <point key="canvasLocation" x="-1491" y="1578"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xio-MR-CRE">
@@ -1609,7 +1609,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXb-f5-mwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3636.2318840579715" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="-4888" y="812"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3if-rY-bVj">
@@ -1632,17 +1632,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80D-52-QsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-749.27536231884062" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="-1490" y="812"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bEI-Q4-nUq"/>
-        <segue reference="os3-H0-6h6"/>
-        <segue reference="cJJ-sh-Wd6"/>
+        <segue reference="0dc-9C-38b"/>
+        <segue reference="bzB-XC-Nm1"/>
+        <segue reference="0YW-uR-4kY"/>
+        <segue reference="j4h-qD-W3t"/>
         <segue reference="zdA-D4-pH5"/>
         <segue reference="41c-Ic-4rv"/>
         <segue reference="Y5S-XC-IJ7"/>
-        <segue reference="QvU-kC-vYI"/>
+        <segue reference="9pM-Ob-aNT"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
