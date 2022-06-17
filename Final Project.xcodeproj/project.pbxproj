@@ -27,6 +27,8 @@
 		ECD604462859044B00499BFF /* Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD604442859044B00499BFF /* Final_Project.xcdatamodeld */; };
 		ECD604482859044C00499BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD604472859044C00499BFF /* Assets.xcassets */; };
 		ECD6044B2859044C00499BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD604492859044C00499BFF /* LaunchScreen.storyboard */; };
+		ECD8C408285C4943000EE373 /* AddSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8C407285C4943000EE373 /* AddSymptomViewController.swift */; };
+		ECD8C40A285C6CFE000EE373 /* DeleteSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8C409285C6CFE000EE373 /* DeleteSymptomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		ECD604472859044C00499BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD6044A2859044C00499BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECD6044C2859044C00499BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD8C407285C4943000EE373 /* AddSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomViewController.swift; sourceTree = "<group>"; };
+		ECD8C409285C6CFE000EE373 /* DeleteSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSymptomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		ECD6042F2859044B00499BFF = {
 			isa = PBXGroup;
 			children = (
+				ECD8C407285C4943000EE373 /* AddSymptomViewController.swift */,
 				EC238944285B849600D5CF2A /* Reminder.swift */,
 				ECD6043A2859044B00499BFF /* Final Project */,
 				ECD604392859044B00499BFF /* Products */,
@@ -91,6 +96,7 @@
 				ECD6043D2859044B00499BFF /* SceneDelegate.swift */,
 				ECD6043F2859044B00499BFF /* ViewController.swift */,
 				ECD604412859044B00499BFF /* Main.storyboard */,
+				ECD8C409285C6CFE000EE373 /* DeleteSymptomViewController.swift */,
 				EC23894B285BB10100D5CF2A /* CompleteReminderViewController.swift */,
 				A8EFA156285A42CA00384290 /* FullNameViewController.swift */,
 				A8EFA158285A430C00384290 /* AgeViewController.swift */,
@@ -184,6 +190,7 @@
 			files = (
 				A8EFA15F285A43B900384290 /* DosePeriodViewController.swift in Sources */,
 				A8EFA151285A3A2000384290 /* SymptomsLogViewController.swift in Sources */,
+				ECD8C40A285C6CFE000EE373 /* DeleteSymptomViewController.swift in Sources */,
 				ECD604402859044B00499BFF /* ViewController.swift in Sources */,
 				A8EFA153285A3ABE00384290 /* MyAccountViewController.swift in Sources */,
 				EC23894C285BB10100D5CF2A /* CompleteReminderViewController.swift in Sources */,
@@ -192,6 +199,7 @@
 				A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */,
 				A8EFA14F285A399E00384290 /* RemindersViewController.swift in Sources */,
 				ECD604462859044B00499BFF /* Final_Project.xcdatamodeld in Sources */,
+				ECD8C408285C4943000EE373 /* AddSymptomViewController.swift in Sources */,
 				A8EFA155285A427200384290 /* UserLoginViewController.swift in Sources */,
 				ECC35006285B798E00ABA352 /* AddReminderViewController.swift in Sources */,
 				ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */,

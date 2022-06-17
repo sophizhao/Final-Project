@@ -9,6 +9,7 @@ import UIKit
 
 class RemindersViewController: UIViewController {
 
+    @IBOutlet weak var newReminderButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     static var reminderName = ""
@@ -34,38 +35,12 @@ class RemindersViewController: UIViewController {
             }
         }
     }
-//
-//
-//    // MARK: - Table view data source
-//
+    // MARK: - Table view data source
+
     override func viewWillAppear(_ animated: Bool) {
         getReminders()
     }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//
-//        return reminders.count
-//    }
-//
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////        let dateFormatter = DateFormatter()
-////
-////        dateFormatter.dateStyle = DateFormatter.Style.short
-////        dateFormatter.timeStyle = DateFormatter.Style.short
-////
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-//
-//        let reminder = reminders[indexPath.row]
-//
-////        cell.textLabel?.text =  dateFormatter.string(from: reminder.time ?? Date()) + (reminder.frequency ?? "")!
-////        print("Testing cellForRowAt")
-////        print(dateFormatter.string(from: reminder.time ?? Date()) + (reminder.frequency ?? "")!)
-//
-//        return cell
-//    }
-//
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if let addVC = segue.destination as? AddReminderViewController {
@@ -113,6 +88,8 @@ extension RemindersViewController: UITableViewDataSource{
         let reminderDate = dateFormatter.string(from: reminder.time!)
         RemindersViewController.reminderName = "\(reminderDate) \(reminder.frequency ?? "")"
         
+        cell.textLabel?.font = UIFont.init(name: "Futura", size: 16)
+        
         cell.textLabel?.text = RemindersViewController.reminderName
         print("Testing cellForRowAt")
         print("\(hour):\(minute) \(reminder.frequency ?? "")")
@@ -121,5 +98,30 @@ extension RemindersViewController: UITableViewDataSource{
     }
 
 }
+//
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//
+//        return reminders.count
+//    }
+//
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////        let dateFormatter = DateFormatter()
+////
+////        dateFormatter.dateStyle = DateFormatter.Style.short
+////        dateFormatter.timeStyle = DateFormatter.Style.short
+////
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+//
+//        let reminder = reminders[indexPath.row]
+//
+////        cell.textLabel?.text =  dateFormatter.string(from: reminder.time ?? Date()) + (reminder.frequency ?? "")!
+////        print("Testing cellForRowAt")
+////        print(dateFormatter.string(from: reminder.time ?? Date()) + (reminder.frequency ?? "")!)
+//
+//        return cell
+//    }
 //
 
