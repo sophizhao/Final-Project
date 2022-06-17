@@ -18,7 +18,6 @@
 		A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15C285A437E00384290 /* DosageViewController.swift */; };
 		A8EFA15F285A43B900384290 /* DosePeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */; };
 		EC238945285B849600D5CF2A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC238944285B849600D5CF2A /* Reminder.swift */; };
-		EC23894C285BB10100D5CF2A /* CompleteReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23894B285BB10100D5CF2A /* CompleteReminderViewController.swift */; };
 		ECC35006285B798E00ABA352 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC35005285B798E00ABA352 /* AddReminderViewController.swift */; };
 		ECD6043C2859044B00499BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043B2859044B00499BFF /* AppDelegate.swift */; };
 		ECD6043E2859044B00499BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6043D2859044B00499BFF /* SceneDelegate.swift */; };
@@ -42,7 +41,6 @@
 		A8EFA15E285A43B900384290 /* DosePeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosePeriodViewController.swift; sourceTree = "<group>"; };
 		BD92B06D285A767A00FD9505 /* Final Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Final Project.entitlements"; sourceTree = "<group>"; };
 		EC238944285B849600D5CF2A /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		EC23894B285BB10100D5CF2A /* CompleteReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteReminderViewController.swift; sourceTree = "<group>"; };
 		ECC35005285B798E00ABA352 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		ECD604382859044B00499BFF /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6043B2859044B00499BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				ECD6043D2859044B00499BFF /* SceneDelegate.swift */,
 				ECD6043F2859044B00499BFF /* ViewController.swift */,
 				ECD604412859044B00499BFF /* Main.storyboard */,
-				EC23894B285BB10100D5CF2A /* CompleteReminderViewController.swift */,
 				A8EFA156285A42CA00384290 /* FullNameViewController.swift */,
 				A8EFA158285A430C00384290 /* AgeViewController.swift */,
 				A8EFA15A285A434F00384290 /* MedicationViewController.swift */,
@@ -186,7 +183,6 @@
 				A8EFA151285A3A2000384290 /* SymptomsLogViewController.swift in Sources */,
 				ECD604402859044B00499BFF /* ViewController.swift in Sources */,
 				A8EFA153285A3ABE00384290 /* MyAccountViewController.swift in Sources */,
-				EC23894C285BB10100D5CF2A /* CompleteReminderViewController.swift in Sources */,
 				ECD6043C2859044B00499BFF /* AppDelegate.swift in Sources */,
 				A8EFA159285A430C00384290 /* AgeViewController.swift in Sources */,
 				A8EFA15D285A437E00384290 /* DosageViewController.swift in Sources */,

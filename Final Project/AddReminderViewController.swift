@@ -10,7 +10,7 @@ import UIKit
 class AddReminderViewController: UIViewController {
 
     var previousVC = RemindersViewController()
-    var frequency = "daily"
+    var frequency = ""
     var time : Date = Date()
     
     @IBOutlet weak var timePicker: UIDatePicker!
@@ -50,8 +50,7 @@ class AddReminderViewController: UIViewController {
 
             reminder.time = time
 
-            print(reminder.frequency ?? "daily")
-            print(reminder.time ?? Date())
+
             try? context.save()
 
             navigationController?.popViewController(animated: true)
