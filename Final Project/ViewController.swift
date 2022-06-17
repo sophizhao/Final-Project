@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         quotesList.append("“Nothing is impossible. The word itself says: ‘I’m possible!'” ~ Audrey Hepburn")
         quotesList.append("“You are never too old to set another goal or to dream a new dream.” ~ C.S. Lewis")
         quotesList.append("“There is no failure except in no longer trying.” ~ Elbert Hubbard")
-        quotesList.append("“It does not matter how slowly you go as long as you do not stop.” ~ Confucius")
-        quotesList.append("“I’m not telling you it is going to be easy, I’m telling you it’s going to be worth it.” ~ Arthur L. Williams")
+        quotesList.append("“It Does Not Matter How Slowly You Go As Long As You Do Not Stop.” ~ Confucius")
+        quotesList.append("“I’m Not Telling You It Is Going To Be Easy, I’m Telling You It’s Going To Be Worth It.” ~ Arthur L. Williams")
         quotesList.append("“When you feel like quitting think about why you started.” ~ Anonymous")
         quotesList.append("“To accept ourselves as we are means to value our imperfections as much as our perfections.” ~ Sandra Bierig")
         quotesList.append("“Part of courage is simple consistency.” ~ Peggy Noonan")
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         if FullNameViewController.accountInfo[0] == ""{
-            userName.text = "Guest!"
+            userName.text = "user!"
         } else {
             userName.text = FullNameViewController.accountInfo[0] + "!"
         }
